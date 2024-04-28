@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Home page {%endblock%}
+
+{% block content %}
+{{ super(<div>, <link>) }}
+    {%for i in to_do%}
+        <p>{{i}}</p>
+    {%endfor%}
+
+{% endblock %}
+
+
